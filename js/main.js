@@ -10,7 +10,6 @@ if (!!$.prototype.justifiedGallery) {
   $(".article-gallery").justifiedGallery(options);
 }
 
-
 $(document).ready(function() {
 
   /**
@@ -111,4 +110,14 @@ $(document).ready(function() {
       });
     }
   }
+  /**
+   * 假如检测到了github geojson ,让内置的map与内容等宽
+   */
+  $('iframe').width($('.content').width());
+  $(window).resize(function(){
+    $('iframe').width($('.content').width());
+  });
+
+
+
 });
