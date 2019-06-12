@@ -117,7 +117,4 @@ $(document).ready(function() {
   $(window).resize(function(){
     $('iframe').width($('.content').width());
   });
-
-
-
 });
