@@ -116,6 +116,19 @@
     </div>
   </div>
   <script>
+    if ( 'serviceWorker' in navigator ) {
+
+      try {
+
+          navigator.serviceWorker.register( 'sw.js' );
+
+      } catch ( error ) {
+
+      }
+
+    }
+  </script>
+  <script>
     if (self == top) {
       document.getElementsByTagName("body")[0].style.display = "block";
     } else {
